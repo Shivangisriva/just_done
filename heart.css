@@ -1,0 +1,54 @@
+
+body{
+    margin:0;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+span
+{
+    width: 100px;
+    height: 100px;
+    background: url("./Assets/heart.png");
+    background-size: cover;
+    position: absolute;
+   pointer-events: none;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    animation: animate 6s linear;
+}
+
+@keyframes animate{
+    0%{
+        transform: translate(-50%,-50%);
+        opacity:1;
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%,-5000%);
+        opacity:0;
+        filter: hue-rotate(720deg);
+    }
+}
+
+.content
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+
+}
+h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size:3rem ;
+    color: white;
+ 
+}
+h4{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
